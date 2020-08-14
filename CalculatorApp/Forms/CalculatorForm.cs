@@ -73,7 +73,7 @@ namespace CalculatorApp
             }
         }
 
-        //Operator Configurationssssss
+        //Operator Configurations
         public void plusButton_Click(object sender, EventArgs e)
         {
             equationTextBox.Text = addOperator.Operator("+", mainTextBox.Text);

@@ -12,64 +12,65 @@ namespace CalculatorApp
             mainTextBox.Text = null;
         }
 
+        AddValue addValue = new AddValue();
         AddOperator addOperator = new AddOperator();
 
         // Value Configurations
         private void zeroButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("0");
+            mainTextBox.Text = addValue.Value("0");
         }
 
         private void oneButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("1");
+            mainTextBox.Text = addValue.Value("1");
         }
 
         private void twoButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("2");
+            mainTextBox.Text = addValue.Value("2");
         }
 
         private void threeButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("3");
+            mainTextBox.Text = addValue.Value("3");
         }
 
         private void fourButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("4");
+            mainTextBox.Text = addValue.Value("4");
         }
 
         private void fiveButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("5");
+            mainTextBox.Text = addValue.Value("5");
         }
 
         private void sixButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("6");
+            mainTextBox.Text = addValue.Value("6");
         }
 
         private void sevenButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("7");
+            mainTextBox.Text = addValue.Value("7");
         }
 
         private void eightButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("8");
+            mainTextBox.Text = addValue.Value("8");
         }
 
         private void nineButton_Click(object sender, EventArgs e)
         {
-            mainTextBox.Text = AddValue.Value("9");
+            mainTextBox.Text = addValue.Value("9");
         }
 
         private void periodButton_Click(object sender, EventArgs e)
         {
             if (!mainTextBox.Text.Contains("."))
             {
-                mainTextBox.Text = AddValue.Value(".");
+                mainTextBox.Text = addValue.Value(".");
             }
         }
 
@@ -78,30 +79,35 @@ namespace CalculatorApp
         {
             equationTextBox.Text = addOperator.Operator("+", mainTextBox.Text);
             mainTextBox.Text = String.Empty;
+            addValue.ClearCurrentValue();
         }
 
         public void minusButton_Click(object sender, EventArgs e)
         {
             equationTextBox.Text = addOperator.Operator("-", mainTextBox.Text);
             mainTextBox.Text = String.Empty;
+            addValue.ClearCurrentValue();
         }
 
         public void multiplyButton_Click(object sender, EventArgs e)
         {
             equationTextBox.Text = addOperator.Operator("X", mainTextBox.Text);
             mainTextBox.Text = String.Empty;
+            addValue.ClearCurrentValue();
         }
 
         public void divideButton_Click(object sender, EventArgs e)
         {            
             equationTextBox.Text = addOperator.Operator("/", mainTextBox.Text);
             mainTextBox.Text = String.Empty;
+            addValue.ClearCurrentValue();
         }
 
         private void powerOfButton_Click(object sender, EventArgs e)
         {            
             equationTextBox.Text = addOperator.Operator("^", mainTextBox.Text);
             mainTextBox.Text = String.Empty;
+            addValue.ClearCurrentValue();
         }
 
         private void squareRootButton_Click(object sender, EventArgs e)
@@ -122,8 +128,7 @@ namespace CalculatorApp
         {
             mainTextBox.Text = String.Empty;
             equationTextBox.Text = String.Empty;
-            
-            AddValue.currentValue = null;
+            addValue.ClearCurrentValue();
         }
         private void negateButton_Click(object sender, EventArgs e)
         {

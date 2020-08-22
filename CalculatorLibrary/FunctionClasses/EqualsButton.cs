@@ -10,7 +10,7 @@ namespace CalculatorApp
     /// This method takes both entered values and decides what equation to conduct depending on the mathOperator used. The result is returned.
     /// </summary>
 
-    class EqualsButton
+    public class EqualsButton
     {     
         public string ComputeAnswer(double FirstValue, string SecondNumberString, string MathOperator)
         {

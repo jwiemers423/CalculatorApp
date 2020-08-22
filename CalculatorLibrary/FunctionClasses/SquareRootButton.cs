@@ -10,7 +10,7 @@ namespace CalculatorApp
     /// This method takes in a value and square roots it.
     /// </summary>
 
-    class SquareRootButton
+    public class SquareRootButton
     {
         private double _firstNumberDouble;
                         

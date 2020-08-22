@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ImagesAndIcons\Wwalczyszyn-Android-Style-Honeycomb-Calculator.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ImagesAndIcons\Wwalczyszyn-Android-Style-Honeycomb-Calculator.ico" />
+  </ItemGroup>
+
+</Project>

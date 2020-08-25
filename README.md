@@ -1,4 +1,7 @@
 # CalculatorApp
+
+Author: Jarett Wiemers
+
 Calculator application that performs all the functions of a standard calculator.
 
 The purpose of this application was to practice the use of windows forms and event handlers. 
